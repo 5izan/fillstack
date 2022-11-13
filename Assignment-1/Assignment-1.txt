@@ -1,0 +1,163 @@
+1. The ” var” and “function” are known as _____________.
+
+ANS:- d. Declaration statements. 
+Both var and function are used to assign a variable name.
+
+2. Which of these is a correct output for the JavaScript code given below?
+
+string X= “Hey”;
+
+string Y=”There”;
+
+alert(X+Y);
+
+ANS:- c. HeyThere
++ operator is used to add numeric values and concatinate string values.As Hey and There are string values the output in alert function will display HeyThere on alert window.
+
+3. Which of these is known as the Equality operator used for checking whether both the values are equal?
+
+ANS:- c. === 
+"==" and '===' are known as equality operators, but both perform different result. "==" will partially validate both the values are equal or not where as '===' validate absolute equal in both the values.
+Example:- 1 == "1"; //true
+		99 === "99"	//false as one us number and other one is a string value
+
+
+4. function sayHi() {
+  console.log(name);
+  console.log(age);
+  var name = 'Lydia';
+  let age = 21;
+}
+
+sayHi();
+ANS: D: undefined and ReferenceError
+js runs from top to down and in 2nd line name is not defined and referenceerror as age is refered at the last.
+
+5. for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+  }
+  
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+  }
+
+ANS:- C: 3 3 3 and 0 1 2
+
+
+6.function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const lydia = new Person('Lydia', 'Hallie');
+const sarah = Person('Sarah', 'Smith');
+
+console.log(lydia);
+console.log(sarah);
+A: Person {firstName: "Lydia", lastName: "Hallie"} and undefined
+B: Person {firstName: "Lydia", lastName: "Hallie"} and Person {firstName: "Sarah", lastName: "Smith"}
+C: Person {firstName: "Lydia", lastName: "Hallie"} and {}
+D:Person {firstName: "Lydia", lastName: "Hallie"} and ReferenceError
+
+7.function sum(a, b) {
+    return a + b;
+  }
+  
+  sum(1, '2');
+ANS: C: "12"
++ operator adds two different data types.
+
+8. let number = 0;
+console.log(number++);//0
+console.log(++number);//2
+console.log(number);//2
+
+ANS: C: 0 2 2
+
+9. var num = 8;
+var num = 10;
+
+console.log(num);
+ANS:- B: 10.
+10 is the newly updated value of num so 10 will displayed in the log.
+
+10. const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+ANS: C: { a: "three", b: "two" }
+The above ans will be displayed because the newly updated value of a is "three" and b value did not change from "two" .
+
+11. Output of code 
+var text = 'outside';
+function logIt(){
+    console.log(text);
+    var text = 'inside';
+};
+logIt();
+ANS: undefined error will be displayed as text='outside' is defined out side of function block outside value will not be considered inside function block hence undefined error will be displayed in the console log.
+
+12. Write program to call the getUsers then print users using callback, promise.
+13. What is call apply bind explain this with the help of example.
+14.Explain Hoisting with example.
+
+15. Output of this code
+var length = 10;
+function fn() {
+    console.log(this.length);
+}
+
+var obj = {
+  length: 5,
+  method: function(fn) {
+    fn();
+    arguments[0]();
+  }
+};
+
+obj.method(fn, 1);
+
+16. what would following code return 
+
+console.log(typeof typeof 1);
+ANS:- String
+
+17. write a progroam to delete employee whose age is 18 
+[
+    {
+        id:1,
+        age:40
+    },
+    {
+        id:2,
+        age:50
+    },
+    {
+        id:3,
+        age:40
+    },
+    {
+        id:4,
+        age:20
+    }
+]
+
+18. Write a program to check number is palidrome or not. 
+19 . Write a program to remove duplicate from array 
+    [30,45,60,20,30,55]
+
+ANS: var arr = [30,45,60,20,30,55]
+    function removeDuplicates(arr) {
+        return arr.filter((item,
+            index) => arr.indexOf(item) === index);
+    }
+ 
+    console.log(removeDuplicates(arr));
+
+
+20. Write a piece of code to center a div vertically and horizontally.
+ANS:- 
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
